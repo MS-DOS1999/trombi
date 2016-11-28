@@ -1,0 +1,484 @@
+/* Zone d'animation de la Glissade */
+
+@keyframes firstglissade {
+
+	0% {
+		transform: translateX(-1000px);
+	}
+
+	100%{
+		transform: translateX(0px);
+	}
+
+}
+
+@-webkit-keyframes firstglissade {
+
+	0% {
+		transform: translateX(-1000px);
+	}
+
+	100%{
+		transform: translateX(0px);
+	}
+
+}
+
+@keyframes secondglissade {
+
+	0% {
+		transform: translateX(-1400px);
+	}
+
+	100%{
+		transform: translateX(0px);
+	}
+
+}
+
+@-webkit-keyframes secondglissade {
+
+	0% {
+		transform: translateX(-1400px);
+	}
+
+	100%{
+		transform: translateX(0px);
+	}
+
+}
+
+@keyframes thirdglissade {
+
+	0% {
+		transform: translateX(-1810px);
+	}
+
+	100%{
+		transform: translateX(0px);
+	}
+
+}
+
+@-webkit-keyframes thirdglissade {
+
+	0% {
+		transform: translateX(-1810px);
+	}
+
+	100%{
+		transform: translateX(0px);
+	}
+
+}
+
+@keyframes fourthglissade {
+
+	0% {
+		transform: translateX(-2220px);
+	}
+
+	100%{
+		transform: translateX(0px);
+	}
+
+}
+
+@-webkit-keyframes fourthglissade {
+
+	0% {
+		transform: translateX(-2220px);
+	}
+
+	100%{
+		transform: translateX(0px);
+	}
+
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+	background-color: rgba(211, 211, 211, 0.8);
+}
+
+header{
+	height: 150px;
+}
+
+h1{
+	height: 70px;
+	width: 40%;
+	margin: 0 auto;
+	line-height: 2em;
+	background-color: rgba(211, 211, 211, 0.8);
+	border: dotted 2px green;
+	border-radius: 25px;
+}
+
+.container{
+	width: 90%;
+	margin: 20px auto;
+	background-color: rgba(226, 188, 116, 0.8);
+	border: solid 1px black;
+	border-radius: 20px;
+}
+
+.videNormal{
+	height: 35px;
+}
+
+.zoneMobile{
+	flex: 1;
+	margin: 50px;
+	background-color: green;
+	line-height: 20em;
+	border: solid 1px black;
+}
+
+.firstZone{
+	background-color: lightblue;
+}
+
+.secondZone{
+	background-color: darkgreen;
+}
+
+.thirdZone{
+	background-color: orange;
+}
+
+.fourthZone{
+	background-color: darkgrey;
+}
+
+#glissadeArea{
+	height: 500px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+#animationGlissadeArea{
+	display: flex;
+	width: calc(100% - 2px);
+	height: calc(100% - 61px);
+	background-color: #FFF;
+	border: solid 1px black;
+	border-top: none;
+}
+
+#animationGlissadeArea:hover #firstGlissadeZone{
+	animation: firstglissade 0.75s linear;
+	-webkit-animation: firstglissade 0.75s linear;
+}
+
+#animationGlissadeArea:hover #secondGlissadeZone{
+	animation: secondglissade 1.05s linear;
+	-webkit-animation: secondglissade 1.05s linear;
+}
+
+#animationGlissadeArea:hover #thirdGlissadeZone{
+	animation: thirdglissade 1.35s linear;
+	-webkit-animation: thirdglissade 1.35s linear;
+}
+
+#animationGlissadeArea:hover #fourthGlissadeZone{
+	animation: fourthglissade 1.65s linear;
+	-webkit-animation: fourthglissade 1.65s linear;
+}
+
+h2{
+	height: 60px;
+	background-color: rgba(226, 210, 116, 0.8);
+	line-height: 2.25em;
+	border: solid 1px black;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+/* Zone de Rotation */
+
+#rotateArea{
+	height: 500px;
+	width: 95%;
+	margin: 50px auto;
+}
+
+#animationRotationArea{
+	position: relative;
+	height: calc(100% - 61px);
+	width: calc(100% - 2px);
+	background-color: #FFF;
+	border: solid 1px black;
+	border-top: none;
+}
+
+.zoneDeRotation{
+	height: 75%;
+	width: 30%;
+	position: absolute;
+	top: 12%;
+	left: 35%;
+	line-height: 20em;
+	border: solid 2px black;
+	transition: 2s;
+	backface-visibility: hidden;
+}
+
+#faceAvant{
+	background-image: linear-gradient(lightblue, darkgreen);
+}
+
+#faceArriere{
+	background-image: linear-gradient(darkgreen, lightblue);
+	transform: rotateY(-180deg);
+}
+
+#animationRotationArea:hover #faceAvant{
+	transform: rotateY(180deg);
+}
+
+#animationRotationArea:hover #faceArriere{
+	transform: rotateY(0deg);
+}
+
+/* Zone de la triple transition ;) */
+
+/* L'animation */
+
+@keyframes rouleMaBoule {
+	from{
+		transform: translateX(0) translateY(0) scale(1) rotate(0deg);
+	}
+
+	50%{
+		transform: translateX(1250%) translateY(-50%) scale(2) rotate(1440deg);
+	}
+
+	to{
+		transform: translateX(2500%) translateY(-150%) scale(4) rotate(2880deg);
+	}
+
+}
+
+@-webkit-keyframes rouleMaBoule {
+	from{
+		transform: translateX(0) translateY(0) scale(1) rotate(0deg);
+	}
+
+	50%{
+		transform: translateX(1250%) translateY(-50%) scale(2) rotate(1440deg);
+	}
+
+	to{
+		transform: translateX(2500%) translateY(-150%) scale(4) rotate(2880deg);
+	}
+
+}
+
+/* Le CSS classique */
+
+#snowballArea{
+	height: 500px;
+	width: 95%;
+	margin: 50px auto;
+}
+
+#animationSnowballArea{
+	height: calc(100% - 61px);
+	width: calc(100% - 2px);
+	position: relative;
+	background-color: #FFF;
+	border: solid 1px black;
+	border-top: none;
+}
+
+#uneBouledeNeige{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	background-image: url(../img/snowflake.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-radius: 50%;
+}
+
+#animationSnowballArea:hover #uneBouledeNeige{
+	animation: rouleMaBoule 3s linear alternate ;
+	animation-iteration-count: 2;
+	-webkit-animation: rouleMaBoule 3s linear alternate ;
+	-webkit-animation-iteration-count: 2;
+}
+
+/* Step by Step*/
+
+/* Zone d'animation */
+
+@keyframes stepperanimation{
+
+	from{
+		transform: translateX(0);
+	}
+
+	10%{
+		transform: translateX(200%) rotate(0deg);
+	}
+
+	20%{
+		transform: translateX(200%) rotate(90deg);
+	}
+
+	30%{
+		transform: translateX(200%) translateY(0) rotate(90deg);
+		background-color: lightblue;
+		border-radius: 30px;
+	}
+
+	40%{
+		transform: translateX(200%) translateY(150%) rotate(90deg);
+		background-color: lightblue;
+		border-radius: 30px;
+	}
+
+	50%{
+		transform: translateX(200%) translateY(150%) rotate(180deg);
+		background-color: lightblue;
+		border-radius: 30px;
+	}
+
+	60%{
+		transform: translateX(200%) translateY(150%) rotate(180deg);
+		background-color: orange;
+		border-radius: 30px;
+	}
+
+	70%{
+		transform: translateX(0) translateY(150%) rotate(180deg);
+		background-color: orange;
+		border-radius: 30px;
+	}
+
+	80%{
+		transform: translateX(0) translateY(150%) rotate(270deg);
+		background-color: pink;
+		border-radius: 30px;
+	}
+
+	90%{
+		transform: translateX(0) translateY(0) rotate(270deg);
+		background-color: pink;
+		border-radius: 15px;
+	}
+
+	to{
+		transform: translateX(0) translateY(0) rotate(360deg);
+		background-color: darkgreen;
+		border-radius: none;
+	}
+
+
+}
+
+@-webkit-keyframes stepperanimation{
+
+	from{
+		transform: translateX(0);
+	}
+
+	10%{
+		transform: translateX(200%) rotate(0deg);
+	}
+
+	20%{
+		transform: translateX(200%) rotate(90deg);
+	}
+
+	30%{
+		transform: translateX(200%) translateY(0) rotate(90deg);
+		background-color: lightblue;
+		border-radius: 15px;
+	}
+
+	40%{
+		transform: translateX(200%) translateY(150%) rotate(90deg);
+		background-color: lightblue;
+		border-radius: 15px;
+	}
+
+	50%{
+		transform: translateX(200%) translateY(150%) rotate(180deg);
+		background-color: lightblue;
+		border-radius: 30px;
+	}
+
+	60%{
+		transform: translateX(200%) translateY(150%) rotate(180deg);
+		background-color: orange;
+		border-radius: 30px;
+	}
+
+	70%{
+		transform: translateX(0) translateY(150%) rotate(180deg);
+		background-color: orange;
+		border-radius: 30px;
+	}
+
+	80%{
+		transform: translateX(0) translateY(150%) rotate(270deg);
+		background-color: pink;
+		border-radius: 30px;
+	}
+
+	90%{
+		transform: translateX(0) translateY(0) rotate(270deg);
+		background-color: pink;
+		border-radius: 15px;
+	}
+
+	to{
+		transform: translateX(0) translateY(0) rotate(360deg);
+		background-color: darkgreen;
+		border-radius: none;
+	}
+
+
+}
+
+/* CSS classique */
+
+#stepperArea{
+	height: 750px;
+	width: 95%;
+	margin: 50px auto;
+}
+
+#animationStepperArea{
+	height: calc(100% - 61px);
+	width: calc(100% - 2px);
+	position: relative;
+	background-color: #FFF;
+	border: solid 1px black;
+	border-top: none;
+}
+
+#steppersquare{
+	height: 30%;
+	width: 25%;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	background-color: darkgreen;
+}
+
+#animationStepperArea:hover #steppersquare{
+	animation: stepperanimation 10s steps(10);
+	-webkit-animation: stepperanimation 10s steps(10);
+}

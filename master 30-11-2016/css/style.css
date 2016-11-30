@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'alba_superregular';
+    src: url('../font/albas___.eot');
+    src: url('../font/albas___.eot?#iefix') format('embedded-opentype'),
+         url('../font/albas___.woff2') format('woff2'),
+         url('../font/albas___.woff') format('woff'),
+         url('../font/albas___.ttf') format('truetype'),
+         url('../font/albas___.svg#alba_superregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'albaregular';
+    src: url('../font/alba____.eot');
+    src: url('../font/.eot?#iefix') format('embedded-opentype'),
+         url('../font/alba____.woff2') format('woff2'),
+         url('../font/alba____.woff') format('woff'),
+         url('../font/alba____.ttf') format('truetype'),
+         url('../font/alba____.svg#albaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	list-style: none;
+}
+
+.container{
+	width: 100%;
+	background-image: url(../img/paternjulien.jpg);
+	background-repeat: repeat;
+}
+
+/* Zone d'entête */
+
+header{
+	position: relative;
+}
+
+#logosimplonmars{
+	position: absolute;
+	display: flex;
+	top: 30px;
+	left: 30px;
+	z-index: 2;
+}
+
+#logopromo{
+	display: block;
+	position: absolute;
+	z-index: 2;
+	font-family: 'albaregular';
+	top: 30px;
+	right: 30px;
+	vertical-align: middle;
+	line-height: 100px;
+	color: rgb(220, 220, 220);
+}
+
+#downto{
+	display: none;
+	text-align: center;
+	width: 100%;
+}
+
+#titletrombi{
+
+	font-family: 'alba_superregular';
+	margin-left: 10px;
+	color: white;
+	z-index: 2;
+  vertical-align: middle;
+	line-height: 100px;
+}
+
+#colorheader{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 400px;
+	width: 100%;
+	z-index: 1;
+}
+
+#imageheader{
+	background-image: url(../img/Marseille_Background.jpg);
+	background-size: cover;
+	height: 400px;
+}
+
+/* Zone de Pied de Page */
+
+footer{
+	position: relative;
+}
+
+#colorfooter{
+	position: absolute;
+	background-color: rgba(102, 178, 255, 0.4);
+	height: 250px;
+	width: 100%;
+	z-index: 1;
+}
+
+#imagefooter{
+	background-image: url(../img/mucemfootercoupe.jpg);
+	background-size: cover;
+	height: 250px;
+}
+
+/* Zone de Rotation */
+
+.row{
+	height: 500px;
+	margin: 50px auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: lightblue;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+
+}
+
+.studentArea{
+	height: 90%;
+	width: 300px;
+	position: relative;
+}
+
+.zoneDeRotation{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 20em;
+	border: solid 2px black;
+	transition: 2s;
+	backface-visibility: hidden;
+}
+
+.faceAvant{
+	background-image: linear-gradient(lightblue, darkgreen);
+}
+
+.faceArriere{
+	background-image: linear-gradient(darkgreen, lightblue);
+	transform: rotateY(-180deg);
+}
+
+.studentArea:hover .faceAvant{
+	transform: rotateY(180deg);
+}
+
+.studentArea:hover .faceArriere{
+	transform: rotateY(0deg);
+}
+
+/* Custom, iPhone Retina */
+
+@media screen and (min-width : 320px) {
+
+	.heightmin{
+		min-height: 1000px;
+	}
+
+	.row{
+		flex-direction: column;
+	}
+
+	#logopromo{
+		display: none;
+	}
+
+	#downto{
+		display: block;
+		position: absolute;
+		z-index: 2;
+		font-family: 'albaregular';
+		bottom: 20px;
+		vertical-align: middle;
+		line-height: 100px;
+		color: rgb(220, 220, 220);
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+
+@media screen and (min-width : 480px) {
+
+	.heightmin{
+		min-height: 1160px;
+	}
+
+	.row{
+		flex-direction: column;
+	}
+
+	#logopromo{
+		display: none;
+	}
+
+	#downto{
+		display: block;
+		position: absolute;
+		z-index: 2;
+		font-family: 'albaregular';
+		bottom: 20px;
+		vertical-align: middle;
+		line-height: 100px;
+		color: rgb(220, 220, 220);
+	}
+
+}
+
+/* Small Devices, Tablets */
+
+@media screen and (min-width : 768px) {
+
+	.heightmin{
+		min-height: 1448px;
+	}
+
+	.row{
+		flex-direction: row;
+	}
+
+	#logopromo{
+		display: block;
+	}
+
+	#downto{
+		display: none;
+	}
+
+}
+
+/* Medium Devices, Little Desktops */
+
+@media screen and (min-width : 992px) {
+
+	.heightmin{
+		min-height: 1672px;
+	}
+
+	.row{
+		flex-direction: row;
+	}
+
+	#logopromo{
+		display: block;
+	}
+
+	#downto{
+		display: none;
+	}
+
+}
+
+/* Medium Devices, Little Desktops */
+
+@media screen and (min-width : 1280px) {
+
+	.heightmin{
+		min-height: 1960px;
+	}
+
+	.row{
+		flex-direction: row;
+	}
+
+	#logopromo{
+		display: block;
+	}
+
+	#downto{
+		display: none;
+	}
+
+}
+
+/* Large Devices, HD 1080p */
+
+@media screen and (min-width : 1920px) {
+
+	.heightmin{
+		min-height: 2600px;
+	}
+
+	.row{
+		flex-direction: row;
+	}
+
+	#logopromo{
+		display: block;
+	}
+
+	#downto{
+		display: none;
+	}
+
+}
+
+/* Extra Large Devices, 4K */
+
+@media screen and (min-width : 3840px) {
+
+	.heightmin{
+		min-height: 4520px;
+	}
+
+	.row{
+		flex-direction: row;
+	}
+
+	#logopromo{
+		display: block;
+	}
+
+	#downto{
+		display: none;
+	}
+
+}

@@ -10,6 +10,8 @@
 
 }
 
+
+
 .zonephoto{
   width: 19%;
   height: 55%;
@@ -21,7 +23,7 @@
 
 .zonebtn {
 margin-top: 70%;
-width: 60%;
+width: 80%;
 height: 10%;
 margin-left: 10%;
 border-bottom: 2px solid lightblue;
@@ -41,6 +43,8 @@ border: none;
 
 .twitter:hover{
   cursor: pointer;
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 
 
@@ -59,6 +63,8 @@ border: none;
 
 .linkedin:hover{
   cursor: pointer;
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 
 
@@ -76,6 +82,8 @@ border: none;
 
 .github:hover{
   cursor: pointer;
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 
 .wordpress{
@@ -89,7 +97,26 @@ border: none;
 }
 
  .wordpress:hover{
+   transform: rotate(360deg);
+   transition-duration: 0.5s;
    cursor:pointer;
+ }
+
+
+ .email{
+   background-image: url("email.png");
+   width: 32px;
+   height: 32px;
+   margin-left: 5px;
+   border-radius: 50px;
+   display: inline;
+   border: none;
+ }
+
+ .email:hover{
+   transform: rotate(360deg);
+   transition-duration: 1s;
+   cursor: pointer;
  }
 
 
@@ -116,10 +143,12 @@ border: none;
   border-radius: 15px;
   background-color: red;
   color: white;
+  border: none;
 }
 
 .btn:hover{
   background-color: blue;
   cursor: pointer;
-  transform:rotate(360deg);
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }

@@ -135,18 +135,20 @@ footer{
 	left: 0;
 	width: 100%;
 	height: 100%;
-  line-height: inherit;
+  	line-height: inherit;
 	border: solid 2px black;
+	border-radius: 25px;
 	transition: 2s;
 	backface-visibility: hidden;
 }
 
 .frontFace{
-	background-image: linear-gradient(lightblue, darkgreen);
+	background-color: #FAF0E6;
 }
 
 .backFace{
-	background-image: linear-gradient(darkgreen, lightblue);
+	color: white;
+	background-color: #2D2D30;
 	transform: rotateY(-180deg);
 }
 

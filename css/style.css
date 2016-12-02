@@ -24,105 +24,6 @@
 
 }
 
-
-/* Zone d'animation de la Glissade */
-
-@keyframes firstglissade {
-
-	0% {
-		transform: translateX(-1000px);
-	}
-
-	100%{
-		transform: translateX(0px);
-	}
-
-}
-
-@-webkit-keyframes firstglissade {
-
-	0% {
-		transform: translateX(-1000px);
-	}
-
-	100%{
-		transform: translateX(0px);
-	}
-
-}
-
-@keyframes secondglissade {
-
-	0% {
-		transform: translateX(-1400px);
-	}
-
-	100%{
-		transform: translateX(0px);
-	}
-
-}
-
-@-webkit-keyframes secondglissade {
-
-	0% {
-		transform: translateX(-1400px);
-	}
-
-	100%{
-		transform: translateX(0px);
-	}
-
-}
-
-@keyframes thirdglissade {
-
-	0% {
-		transform: translateX(-1810px);
-	}
-
-	100%{
-		transform: translateX(0px);
-	}
-
-}
-
-@-webkit-keyframes thirdglissade {
-
-	0% {
-		transform: translateX(-1810px);
-	}
-
-	100%{
-		transform: translateX(0px);
-	}
-
-}
-
-@keyframes fourthglissade {
-
-	0% {
-		transform: translateX(-2220px);
-	}
-
-	100%{
-		transform: translateX(0px);
-	}
-
-}
-
-@-webkit-keyframes fourthglissade {
-
-	0% {
-		transform: translateX(-2220px);
-	}
-
-	100%{
-		transform: translateX(0px);
-	}
-
-}
-
 *{
 	margin: 0;
 	padding: 0;
@@ -130,9 +31,23 @@
 	text-decoration: none;
 	list-style: none;
 }
+
+.container{
+	width: 100%;
+	background-image: url(../img/paternjulien.jpg);
+	background-repeat: repeat;
+}
+
+.clearfix{
+	clear: both;
+}
+
+/* Zone d'entête */
+
 header{
 	position: relative;
 }
+
 #logosimplonmars{
 	position: absolute;
 	display: flex;
@@ -152,6 +67,7 @@ header{
 	line-height: 100px;
 	color: rgb(220, 220, 220);
 }
+
 #downto{
 	display: none;
 	text-align: center;
@@ -166,9 +82,7 @@ header{
 	z-index: 2;
   vertical-align: middle;
 	line-height: 100px;
-
 }
-
 
 #colorheader{
 	position: absolute;
@@ -177,14 +91,19 @@ header{
 	width: 100%;
 	z-index: 1;
 }
+
 #imageheader{
 	background-image: url(../img/Marseille_Background.jpg);
 	background-size: cover;
 	height: 400px;
 }
+
+/* Zone de Pied de Page */
+
 footer{
 	position: relative;
 }
+
 #colorfooter{
 	position: absolute;
 	background-color: rgba(102, 178, 255, 0.4);
@@ -192,368 +111,150 @@ footer{
 	width: 100%;
 	z-index: 1;
 }
+
 #imagefooter{
 	background-image: url(../img/mucemfootercoupe.jpg);
 	background-size: cover;
 	height: 250px;
 }
 
-.container{
-	width: 100%;
-	background-image: url(../img/paternjulien.jpg);
-	background-repeat: repeat;
-}
+/* Corps de page */
 
-.zoneMobile{
-	flex: 1;
-	margin: 50px;
-	background-color: green;
-	line-height: 20em;
-	border: solid 1px black;
-}320320
-
-.firstZone{
-	background-color: lightblue;
-}
-
-.secondZone{
-	background-color: darkgreen;
-}
-
-.thirdZone{
-	background-color: orange;
-}
-
-.fourthZone{
-	background-color: darkgrey;
-}
-
-#glissadeArea{
-	height: 500px;
-	width: 95%;
-	margin: 0 auto;
-}
-
-#animationGlissadeArea{
+.row{
 	display: flex;
-	width: calc(100% - 2px);
-	height: calc(100% - 61px);
-	background-color: rgba(0,0,0, 0);
-	border-top: none;
 }
 
-#animationGlissadeArea:hover #firstGlissadeZone{
-	animation: firstglissade 0.75s linear;
-	-webkit-animation: firstglissade 0.75s linear;
+.studentArea{
+	height: 90%;
+	position: relative;
 }
-
-#animationGlissadeArea:hover #secondGlissadeZone{
-	animation: secondglissade 1.05s linear;
-	-webkit-animation: secondglissade 1.05s linear;
-}
-
-#animationGlissadeArea:hover #thirdGlissadeZone{
-	animation: thirdglissade 1.35s linear;
-	-webkit-animation: thirdglissade 1.35s linear;
-}
-
-#animationGlissadeArea:hover #fourthGlissadeZone{
-	animation: fourthglissade 1.65s linear;
-	-webkit-animation: fourthglissade 1.65s linear;
-}
-
-
-/* Zone de Rotation */
 
 .rotateArea{
-	height: 500px;
-	width: 95%;
-	margin: 50px auto;
-	display: flex;
-
-}
-
-#animationRotationArea{
-	position: relative;
-	height: calc(100% - 61px);
-	width: calc(100% - 2px);
-	background-color: background-color: rgba(0,0,0, 0);
-	border-top: none;
-}
-
-.zoneDeRotation{
-	height: 75%;
-	width: 30%;
 	position: absolute;
-	top: 12%;
-	left: 35%;
-	line-height: 20em;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  	line-height: inherit;
 	border: solid 2px black;
+	border-radius: 25px;
 	transition: 2s;
 	backface-visibility: hidden;
 }
 
-#faceAvant{
-	background-image: linear-gradient(lightblue, darkgreen);
+.frontFace{
+	background-color: #FAF0E6;
 }
 
-#faceArriere{
-	background-image: linear-gradient(darkgreen, lightblue);
+.backFace{
+	color: white;
+	background-color: #2D2D30;
 	transform: rotateY(-180deg);
 }
 
-#animationRotationArea:hover #faceAvant{
+.studentArea:hover .frontFace{
 	transform: rotateY(180deg);
 }
 
-#animationRotationArea:hover #faceArriere{
+.studentArea:hover .backFace{
 	transform: rotateY(0deg);
 }
 
-/* Zone de la triple transition ;) */
+/* Face Avant */
 
-/* L'animation */
-
-@keyframes rouleMaBoule {
-	from{
-		transform: translateX(0) translateY(0) scale(1) rotate(0deg);
-	}
-
-	50%{
-		transform: translateX(1250%) translateY(-50%) scale(2) rotate(1440deg);
-	}
-
-	to{
-		transform: translateX(2500%) translateY(-150%) scale(4) rotate(2880deg);
-	}
-
+.pictureArea {
+  height: 75%;
+  width: 100%;
 }
 
-@-webkit-keyframes rouleMaBoule {
-	from{
-		transform: translateX(0) translateY(0) scale(1) rotate(0deg);
-	}
-
-	50%{
-		transform: translateX(1250%) translateY(-50%) scale(2) rotate(1440deg);
-	}
-
-	to{
-		transform: translateX(2500%) translateY(-150%) scale(4) rotate(2880deg);
-	}
-
+.frontFace img {
+  height: 96%;
+  width: 90%;
+  margin: 2% auto;
+  border: solid 1px black;
 }
 
-/* Le CSS classique */
-
-#snowballArea{
-	height: 500px;
-	width: 95%;
-	margin: 50px auto;
+.frontFace h2 {
+  height: 5%;
+  width: 100%;
+  font-size: 1em;
 }
 
-#animationSnowballArea{
-	height: calc(100% - 61px);
-	width: calc(100% - 2px);
-	position: relative;
-	background-color: background-color: rgba(0,0,0, 0);
-	border-top: none;
+.technoArea {
+  height: 15%;
+  width: 100%;
+  border-top: solid 1px black;
 }
 
-#uneBouledeNeige{
-	height: 50px;
-	width: 50px;
-	position: absolute;
-	bottom: 0;
-	left: 10%;
-	background-image: url(../img/snowflake.png);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	border-radius: 50%;
+.hoverArea{
+  height: calc( 5% - 2px );
+  width: 100%;
+  border-top: solid 1px black;
+  font-size: 0.8em;
+  line-height: 1.3em;
 }
 
-#animationSnowballArea:hover #uneBouledeNeige{
-	animation: rouleMaBoule 3s linear alternate ;
-	animation-iteration-count: 2;
-	-webkit-animation: rouleMaBoule 3s linear alternate ;
-	-webkit-animation-iteration-count: 2;
-}
+/* Face Arrière */
 
-/* Step by Step*/
-
-/* Zone d'animation */
-
-@keyframes stepperanimation{
-
-	from{
-		transform: translateX(0);
-	}
-
-	10%{
-		transform: translateX(200%) rotate(0deg);
-	}
-
-	20%{
-		transform: translateX(200%) rotate(90deg);
-	}
-
-	30%{
-		transform: translateX(200%) translateY(0) rotate(90deg);
-		background-color: lightblue;
-		border-radius: 30px;
-	}
-
-	40%{
-		transform: translateX(200%) translateY(150%) rotate(90deg);
-		background-color: lightblue;
-		border-radius: 30px;
-	}
-
-	50%{
-		transform: translateX(200%) translateY(150%) rotate(180deg);
-		background-color: lightblue;
-		border-radius: 30px;
-	}
-
-	60%{
-		transform: translateX(200%) translateY(150%) rotate(180deg);
-		background-color: orange;
-		border-radius: 30px;
-	}
-
-	70%{
-		transform: translateX(0) translateY(150%) rotate(180deg);
-		background-color: orange;
-		border-radius: 30px;
-	}
-
-	80%{
-		transform: translateX(0) translateY(150%) rotate(270deg);
-		background-color: pink;
-		border-radius: 30px;
-	}
-
-	90%{
-		transform: translateX(0) translateY(0) rotate(270deg);
-		background-color: pink;
-		border-radius: 15px;
-	}
-
-	to{
-		transform: translateX(0) translateY(0) rotate(360deg);
-		background-color: darkgreen;
-		border-radius: none;
-	}
-
-
-}
-
-@-webkit-keyframes stepperanimation{
-
-	from{
-		transform: translateX(0);
-	}
-
-	10%{
-		transform: translateX(200%) rotate(0deg);
-	}
-
-	20%{
-		transform: translateX(200%) rotate(90deg);
-	}
-
-	30%{
-		transform: translateX(200%) translateY(0) rotate(90deg);
-		background-color: lightblue;
-		border-radius: 15px;
-	}
-
-	40%{
-		transform: translateX(200%) translateY(150%) rotate(90deg);
-		background-color: lightblue;
-		border-radius: 15px;
-	}
-
-	50%{
-		transform: translateX(200%) translateY(150%) rotate(180deg);
-		background-color: lightblue;
-		border-radius: 30px;
-	}
-
-	60%{
-		transform: translateX(200%) translateY(150%) rotate(180deg);
-		background-color: orange;
-		border-radius: 30px;
-	}
-
-	70%{
-		transform: translateX(0) translateY(150%) rotate(180deg);
-		background-color: orange;
-		border-radius: 30px;
-	}
-
-	80%{
-		transform: translateX(0) translateY(150%) rotate(270deg);
-		background-color: pink;
-		border-radius: 30px;
-	}
-
-	90%{
-		transform: translateX(0) translateY(0) rotate(270deg);
-		background-color: pink;
-		border-radius: 15px;
-	}
-
-	to{
-		transform: translateX(0) translateY(0) rotate(360deg);
-		background-color: darkgreen;
-		border-radius: none;
-	}
-
-
-}
-
-/* CSS classique */
-
-#stepperArea{
-	height: 750px;
-	width: 95%;
-	margin: 50px auto;
-}
-
-#animationStepperArea{
-	height: calc(100% - 61px);
-	width: calc(100% - 2px);
-	position: relative;
-	background-color: background-color: rgba(0,0,0, 0);
-	border-top: none;
-}
-
-#steppersquare{
-	height: 30%;
+.backFace img{
+	height: 20%;
 	width: 25%;
-	position: absolute;
-	top: 10%;
-	left: 10%;
-	background-color: darkgreen;
+	float: left;
+	margin: 3%;
+	border: solid 1px black;
 }
 
-#animationStepperArea:hover #steppersquare{
-	animation: stepperanimation 10s steps(10);
-	-webkit-animation: stepperanimation 10s steps(10);
+.backFace h2{
+	height: 10%;
+	width: calc( 69% - 2px );
+	float: left;
+	margin-top: 10%;
+	line-height: 3.25em;
+}
+
+.compArea{
+	height: 20%;
+	width: 100%;
+	border-top: solid 1px black;
+}
+
+.socialLink {
+	height: 10%;
+	width: 100%;
+	border-top: solid 1px black;
+}
+
+.writeArea{
+	height: calc( 46% - 5px );
+	width: 100%;
+	border-top: solid 1px black;
 }
 
 /* Custom, iPhone Retina */
+
 @media screen and (min-width : 320px) {
+
 	.heightmin{
 		min-height: 1000px;
 	}
-	.rotateArea{
+
+	.row{
+    	height: 1245px;
 		flex-direction: column;
+    	justify-content: center;
+  		align-items: center;
+  		margin: 35px auto;
 	}
+
+  .studentArea{
+    width: 250px;
+    margin: 20px 0;
+  }
+
 	#logopromo{
 		display: none;
 	}
+
 	#downto{
 		display: block;
 		position: absolute;
@@ -564,19 +265,34 @@ footer{
 		line-height: 100px;
 		color: rgb(220, 220, 220);
 	}
+
 }
 
 /* Extra Small Devices, Phones */
+
 @media screen and (min-width : 480px) {
+
 	.heightmin{
 		min-height: 1160px;
 	}
-	.rotateArea{
+
+	.row{
+    height: 1500px;
 		flex-direction: column;
+    justify-content: center;
+  	align-items: center;
+  	margin: 35px auto;
 	}
+
+  .studentArea{
+    width: 300px;
+    margin: 38px 0;
+  }
+
 	#logopromo{
 		display: none;
 	}
+
 	#downto{
 		display: block;
 		position: absolute;
@@ -587,38 +303,63 @@ footer{
 		line-height: 100px;
 		color: rgb(220, 220, 220);
 	}
+
 }
 
 /* Small Devices, Tablets */
+
 @media screen and (min-width : 768px) {
 
 	.heightmin{
 		min-height: 1448px;
 	}
-	.rotateArea{
+
+	.row{
+    height: 371px;
 		flex-direction: row;
+    justify-content: space-around;
+  	align-items: center;
+  	margin: 40px auto;
 	}
+
+  .studentArea{
+  	width: 225px;
+  }
+
 	#logopromo{
 		display: block;
 	}
+
 	#downto{
 		display: none;
 	}
 
-
 }
 
 /* Medium Devices, Little Desktops */
+
 @media screen and (min-width : 992px) {
+
 	.heightmin{
 		min-height: 1672px;
 	}
-	.rotateArea{
+
+	.row{
+    height: 495px;
 		flex-direction: row;
+    justify-content: space-around;
+  	align-items: center;
+  	margin: 20px auto;
 	}
+
+  .studentArea{
+    width: 300px;
+  }
+
 	#logopromo{
 		display: block;
 	}
+
 	#downto{
 		display: none;
 	}
@@ -626,16 +367,29 @@ footer{
 }
 
 /* Medium Devices, Little Desktops */
+
 @media screen and (min-width : 1280px) {
+
 	.heightmin{
 		min-height: 1960px;
 	}
-	.rotateArea{
+
+	.row{
+	    height: 619px;
 		flex-direction: row;
+	    justify-content: space-around;
+	  	align-items: center;
+	  	margin: 60px auto;
 	}
+
+    .studentArea{
+        width: 375px;
+    }
+
 	#logopromo{
 		display: block;
 	}
+
 	#downto{
 		display: none;
 	}
@@ -643,16 +397,29 @@ footer{
 }
 
 /* Large Devices, HD 1080p */
+
 @media screen and (min-width : 1920px) {
+
 	.heightmin{
 		min-height: 2600px;
 	}
-	.rotateArea{
+
+	.row{
+	    height: 907px;
 		flex-direction: row;
+	    justify-content: space-around;
+	  	align-items: center;
+	  	margin: 70px auto;
 	}
+
+  .studentArea{
+    width: 550px;
+  }
+
 	#logopromo{
 		display: block;
 	}
+
 	#downto{
 		display: none;
 	}
@@ -660,16 +427,29 @@ footer{
 }
 
 /* Extra Large Devices, 4K */
+
 @media screen and (min-width : 3840px) {
+
 	.heightmin{
 		min-height: 4520px;
 	}
-	.rotateArea{
+
+	.row{
+	    height: 1650px;
 		flex-direction: row;
+	    justify-content: space-around;
+	  	align-items: center;
+	  	margin: 150px auto;
 	}
+
+   .studentArea{
+        width: 1000px;
+    }
+
 	#logopromo{
 		display: block;
 	}
+
 	#downto{
 		display: none;
 	}

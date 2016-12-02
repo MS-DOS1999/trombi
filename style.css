@@ -121,4 +121,5 @@ border: none;
 .btn:hover{
   background-color: blue;
   cursor: pointer;
+  transform:rotate(360deg);
 }

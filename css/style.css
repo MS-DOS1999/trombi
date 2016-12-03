@@ -97,6 +97,9 @@ header{
 	background-size: cover;
 	height: 400px;
 }
+.navzind{
+  z-index: 1;
+}
 
 /* Zone de Pied de Page */
 

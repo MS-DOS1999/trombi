@@ -250,8 +250,8 @@ code {
     justify-content: center;
 }
 .nav li:hover a, .nav li:hover {
-    background-color: #aaaaaa;
-    color: black;
+    background-color: #c52d2f;
+    color: #fff;
     transition: 0.2s;
 }
 /*Liens Toggle*/
@@ -718,7 +718,7 @@ code {
 
 /* -----------------------------------------------Media Queries */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 
     /*------------------------------------------------Form*/
     .form {

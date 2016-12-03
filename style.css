@@ -1,0 +1,245 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+
+}
+
+
+
+.zonephoto{
+  width: 19%;
+  height: 55%;
+  border: 2px solid black;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zonebtn {
+margin-top: 70%;
+width: 80%;
+height: 10%;
+margin-left: 10%;
+border-bottom: 2px solid lightblue;
+display:inline-flex;
+
+
+}
+
+.twitter{
+background-image: url("twitter.png");
+width: 32px;
+height: 32px;
+border-radius: 50px;
+display: inline;
+border: none;
+}
+
+.twitter:hover{
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+
+
+
+.linkedin{
+  background-image: url("linkedin.png");
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+  border-radius: 50px;
+  display: inline;
+  border: none;
+
+}
+
+.linkedin:hover{
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+
+
+.github{
+
+  background-image: url("github.png");
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+  border-radius: 50px;
+  display: inline;
+  border: none;
+}
+
+.github:hover{
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+.wordpress{
+  background-image: url("wordpress.png");
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+  border-radius: 50px;
+  display: inline;
+  border: none;
+}
+
+ .wordpress:hover{
+   transform: rotate(360deg);
+   transition-duration: 0.5s;
+   cursor:pointer;
+ }
+
+
+ .email{
+   background-image: url("email.png");
+   width: 32px;
+   height: 32px;
+   margin-left: 5px;
+   border-radius: 50px;
+   display: inline;
+   border: none;
+ }
+
+ .email:hover{
+   transform: rotate(360deg);
+   transition-duration: 1s;
+   cursor: pointer;
+ }
+
+
+ .monsite{
+   background-image: url("site.png");
+   width: 32px;
+   height: 32px;
+   margin-left: 5px;
+   border-radius: 50px;
+   display: inline;
+   border: none;
+ }
+
+ .monsite:hover{
+   transform: rotate(360deg);
+   transition-duration: 1s;
+   cursor: pointer;
+ }
+
+
+.zonecomp{
+
+  margin-top: 20%;
+  width: 80%;
+  height: 10%;
+  margin-left: 10%;
+  border-bottom: 2px solid lightblue;
+  display:inline-flex;
+
+}
+
+.html{
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+  display: inline;
+  border: none;
+
+}
+
+.html:hover{
+
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+.css{
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+  display: inline;
+  border: none;
+
+}
+
+.css:hover{
+
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+.js{
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+  display: inline;
+  border: none;
+
+}
+
+.js:hover{
+
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+.php{
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+  display: inline;
+  border: none;
+
+}
+
+.php:hover{
+
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+.c{
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+  display: inline;
+  border: none;
+
+}
+
+.c:hover{
+
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+.cplus{
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+  display: inline;
+  border: none;
+
+}
+
+.cplus:hover{
+
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}

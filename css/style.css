@@ -109,7 +109,6 @@ header{
 .navzind{
   z-index: 4;
 }
-
 /* Zone de Pied de Page */
 
 footer{
@@ -189,7 +188,6 @@ footer{
 .frontFace h2 {
   height: 5%;
   width: 100%;
-  font-size: 1em;
 }
 
 .technoArea {
@@ -198,12 +196,21 @@ footer{
   border-top: solid 1px black;
 }
 
+.technoPicture {
+	height: 50%;
+	width: 13%;
+	float: left;
+	margin-left: 1%;
+}
+
+.technoPicture img{
+	border: 0;
+}
+
 .hoverArea{
   height: calc( 5% - 2px );
   width: 100%;
   border-top: solid 1px black;
-  font-size: 0.8em;
-  line-height: 1.3em;
 }
 
 /* Face Arrière */
@@ -221,7 +228,19 @@ footer{
 	width: calc( 69% - 2px );
 	float: left;
 	margin-top: 10%;
-	line-height: 3.25em;
+}
+
+.backFace .technoPicture {
+	height: 45%;
+	width: 15%;
+	float: left;
+	margin: 1% 0 0 1%;
+}
+
+.backFace .technoPicture img{
+	height: 100%;
+	width: 100%;
+	border: 0;
 }
 
 .compArea{
@@ -263,6 +282,20 @@ footer{
     margin: 20px 0;
   }
 
+  .frontFace h2 {
+		font-size: 1em;
+	}
+
+	.hoverArea{
+	    font-size: 0.7em;
+	    line-height: 1.4em;
+	}
+
+	.backFace h2{
+		font-size: 1.3em;
+		line-height: 1em;
+	}
+
 	#logopromo{
 		display: none;
 	}
@@ -289,17 +322,31 @@ footer{
 	}
 
 	.row{
-    height: 1500px;
+	    height: 1500px;
 		flex-direction: column;
-    justify-content: center;
-  	align-items: center;
-  	margin: 35px auto;
+	    justify-content: center;
+	  	align-items: center;
+	  	margin: 35px auto;
 	}
 
-  .studentArea{
-    width: 300px;
-    margin: 38px 0;
-  }
+    .studentArea{
+	    width: 300px;
+	    margin: 38px 0;
+    }
+
+    .frontFace h2 {
+		font-size: 1em;
+	}
+
+	.hoverArea{
+	    font-size: 0.7em;
+	    line-height: 1.7em;
+	}
+
+	.backFace h2{
+		font-size: 1.3em;
+		line-height: 1em;
+	}
 
 	#logopromo{
 		display: none;
@@ -327,16 +374,34 @@ footer{
 	}
 
 	.row{
-    height: 371px;
+	    height: 371px;
 		flex-direction: row;
-    justify-content: space-around;
-  	align-items: center;
-  	margin: 40px auto;
+	    justify-content: space-around;
+	  	align-items: center;
+	  	margin: 40px auto;
 	}
 
-  .studentArea{
-  	width: 225px;
-  }
+	.studentArea{
+	  	width: 225px;
+	}
+
+    .rotateArea{
+		border-radius: 12px;
+	}
+
+    .frontFace h2 {
+		font-size: 1em;
+	}
+
+	.hoverArea{
+	    font-size: 0.7em;
+	    line-height: 1.4em;
+	}
+
+	.backFace h2{
+		font-size: 1.3em;
+		line-height: 1em;
+	}
 
 	#logopromo{
 		display: block;
@@ -364,9 +429,28 @@ footer{
   	margin: 20px auto;
 	}
 
-  .studentArea{
-    width: 300px;
-  }
+	.rotateArea{
+		border-radius: 15px;
+	}
+
+    .studentArea{
+    	width: 300px;
+    }
+
+    .frontFace h2 {
+		font-size: 1em;
+		line-height: 1.2em;
+	}
+
+	.hoverArea{
+	    font-size: 0.8em;
+	    line-height: 1.6em;
+	}
+
+	.backFace h2{
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
 
 	#logopromo{
 		display: block;
@@ -392,6 +476,25 @@ footer{
 	    justify-content: space-around;
 	  	align-items: center;
 	  	margin: 60px auto;
+	}
+
+	.rotateArea{
+		border-radius: 20px;
+	}
+
+	.frontFace h2 {
+		font-size: 1.2em;
+		line-height: 1.1em;
+	}
+
+	.hoverArea{
+	    font-size: 0.8em;
+	    line-height: 2.1em;
+	}
+
+	.backFace h2{
+		font-size: 1.5em;
+		line-height: 1.5em;
 	}
 
     .studentArea{
@@ -424,9 +527,23 @@ footer{
 	  	margin: 70px auto;
 	}
 
-  .studentArea{
-    width: 550px;
-  }
+	.studentArea{
+	    width: 550px;
+	}
+
+    .frontFace h2 {
+		font-size: 1em;
+		line-height: 1.8em;
+	}
+
+	.hoverArea{
+	    font-size: 0.8em;
+	    line-height: 3em;
+	}
+
+	.backFace h2{
+		line-height: 3.25em;
+	}
 
 	#logopromo{
 		display: block;
@@ -452,6 +569,20 @@ footer{
 	    justify-content: space-around;
 	  	align-items: center;
 	  	margin: 150px auto;
+	}
+
+	.frontFace h2 {
+		font-size: 1em;
+		line-height: 1.8em;
+	}
+
+	.hoverArea{
+	    font-size: 0.8em;
+	    line-height: 3em;
+	}
+
+	.backFace h2{
+		line-height: 3.25em;
 	}
 
    .studentArea{
